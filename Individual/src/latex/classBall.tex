@@ -1,0 +1,227 @@
+\hypertarget{classBall}{\section{Ball Class Reference}
+\label{classBall}\index{Ball@{Ball}}
+}
+
+
+\hyperlink{classBall}{Ball} class represents the ball in game.  
+
+
+
+
+{\ttfamily \#include $<$Ball.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBall_a1b8421e23e332c547e0f171d5f78a0d6}{Ball} (float x, float y, float r, float ori, float sp)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classBall_a6b8992f08c3bc983fd4093f1d9963dfe}{set\+X\+Position} (float new\+X)
+\begin{DoxyCompactList}\small\item\em Mutator to change the x position of the ball according to the input. \end{DoxyCompactList}\item 
+void \hyperlink{classBall_a9716de6d4d54875e65b455af2758d16e}{set\+Y\+Position} (float new\+Y)
+\begin{DoxyCompactList}\small\item\em Mutator to change the y position of the ball according to the input. \end{DoxyCompactList}\item 
+void \hyperlink{classBall_a5b2818b0d9db0c5bc8cd54f7753ff752}{set\+Radius} (float r)
+\begin{DoxyCompactList}\small\item\em Mutator to change the radius of the ball according to the input. \end{DoxyCompactList}\item 
+void \hyperlink{classBall_afe129f1eeb03c5807fb1fb7b9d2b4692}{set\+Speed} (float sp)
+\begin{DoxyCompactList}\small\item\em set \hyperlink{classBall}{Ball}'s speed through arguement. \end{DoxyCompactList}\item 
+void \hyperlink{classBall_a43c14c96bbf790600fa4160962a4add7}{set\+Orientation} (float ori)
+\begin{DoxyCompactList}\small\item\em Mutator to change the orientation of the ball according to the input. \end{DoxyCompactList}\item 
+\hypertarget{classBall_a15e418ef954dc616027445d95bbed3be}{float \hyperlink{classBall_a15e418ef954dc616027445d95bbed3be}{get\+X\+Position} ()}\label{classBall_a15e418ef954dc616027445d95bbed3be}
+
+\begin{DoxyCompactList}\small\item\em Getter to get the x position of the ball. \end{DoxyCompactList}\item 
+\hypertarget{classBall_afc76d375509152ca9fcb69c93f57600e}{float \hyperlink{classBall_afc76d375509152ca9fcb69c93f57600e}{get\+Y\+Position} ()}\label{classBall_afc76d375509152ca9fcb69c93f57600e}
+
+\begin{DoxyCompactList}\small\item\em Getter to get the y position of the ball. \end{DoxyCompactList}\item 
+\hypertarget{classBall_a01a1890f5a86e8caeb4f91660a4f5700}{float \hyperlink{classBall_a01a1890f5a86e8caeb4f91660a4f5700}{get\+Radius} ()}\label{classBall_a01a1890f5a86e8caeb4f91660a4f5700}
+
+\begin{DoxyCompactList}\small\item\em Getter to get the radius of the ball. \end{DoxyCompactList}\item 
+\hypertarget{classBall_ae16e7b3e1954f1a1854bd3d5b0b59223}{float \hyperlink{classBall_ae16e7b3e1954f1a1854bd3d5b0b59223}{get\+Orientation} ()}\label{classBall_ae16e7b3e1954f1a1854bd3d5b0b59223}
+
+\begin{DoxyCompactList}\small\item\em Getter to get the position of the ball. \end{DoxyCompactList}\item 
+\hypertarget{classBall_abf977c799bfc86ea3e6e08a063c032eb}{float \hyperlink{classBall_abf977c799bfc86ea3e6e08a063c032eb}{get\+Speed} ()}\label{classBall_abf977c799bfc86ea3e6e08a063c032eb}
+
+\begin{DoxyCompactList}\small\item\em Getter to get the speed of the ball. \end{DoxyCompactList}\item 
+\hyperlink{Ball_8h_ad4f6886266572e51d198a61a6c762ce5}{Wall} \hyperlink{classBall_ae1f44298fed16c1b14c13a46dcd0b8a7}{detect\+Wall} (int witdth, int height, std\+::vector$<$ \hyperlink{classPlayer}{Player} $>$ $\ast$p, int \hyperlink{classBall_a046fc0a1d7a500457d3481c8c603777f}{move})
+\begin{DoxyCompactList}\small\item\em Detect whether ball against the wall of window. \end{DoxyCompactList}\item 
+int \hyperlink{classBall_a046fc0a1d7a500457d3481c8c603777f}{move} (int w, int h, std\+::vector$<$ \hyperlink{classPlayer}{Player} $>$ $\ast$p, int mode)
+\begin{DoxyCompactList}\small\item\em Move the ball accoding to the step time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classBall}{Ball} class represents the ball in game. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBall_a1b8421e23e332c547e0f171d5f78a0d6}{\index{Ball@{Ball}!Ball@{Ball}}
+\index{Ball@{Ball}!Ball@{Ball}}
+\subsubsection[{Ball}]{\setlength{\rightskip}{0pt plus 5cm}Ball\+::\+Ball (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{r, }
+\item[{float}]{ori, }
+\item[{float}]{sp}
+\end{DoxyParamCaption}
+)}}\label{classBall_a1b8421e23e332c547e0f171d5f78a0d6}
+
+
+Default constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The center x position of ball. \\
+\hline
+{\em y} & The center y position of ball. \\
+\hline
+{\em r} & The radius of ball. \\
+\hline
+{\em ori} & The orientation of ball. \\
+\hline
+{\em sp} & The speed of ball. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBall_ae1f44298fed16c1b14c13a46dcd0b8a7}{\index{Ball@{Ball}!detect\+Wall@{detect\+Wall}}
+\index{detect\+Wall@{detect\+Wall}!Ball@{Ball}}
+\subsubsection[{detect\+Wall}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Wall} Ball\+::detect\+Wall (
+\begin{DoxyParamCaption}
+\item[{int}]{witdth, }
+\item[{int}]{height, }
+\item[{std\+::vector$<$ {\bf Player} $>$ $\ast$}]{p, }
+\item[{int}]{move}
+\end{DoxyParamCaption}
+)}}\label{classBall_ae1f44298fed16c1b14c13a46dcd0b8a7}
+
+
+Detect whether ball against the wall of window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The witdth of window(default\+: 800) \\
+\hline
+{\em height} & The height of window(default\+: 800) \\
+\hline
+{\em p} & The vector of players' paddle. \\
+\hline
+{\em move} & The playing mode of the pong game. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classBall_a046fc0a1d7a500457d3481c8c603777f}{\index{Ball@{Ball}!move@{move}}
+\index{move@{move}!Ball@{Ball}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}int Ball\+::move (
+\begin{DoxyParamCaption}
+\item[{int}]{w, }
+\item[{int}]{h, }
+\item[{std\+::vector$<$ {\bf Player} $>$ $\ast$}]{p, }
+\item[{int}]{mode}
+\end{DoxyParamCaption}
+)}}\label{classBall_a046fc0a1d7a500457d3481c8c603777f}
+
+
+Move the ball accoding to the step time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & The witdth of window(default\+: 800) \\
+\hline
+{\em h} & The height of window(default\+: 800) \\
+\hline
+{\em p} & The vector of players' paddle. \\
+\hline
+{\em mode} & The playing mode of the pong game. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classBall_a43c14c96bbf790600fa4160962a4add7}{\index{Ball@{Ball}!set\+Orientation@{set\+Orientation}}
+\index{set\+Orientation@{set\+Orientation}!Ball@{Ball}}
+\subsubsection[{set\+Orientation}]{\setlength{\rightskip}{0pt plus 5cm}void Ball\+::set\+Orientation (
+\begin{DoxyParamCaption}
+\item[{float}]{ori}
+\end{DoxyParamCaption}
+)}}\label{classBall_a43c14c96bbf790600fa4160962a4add7}
+
+
+Mutator to change the orientation of the ball according to the input. 
+
+set \hyperlink{classBall}{Ball}'s speed through arguement.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+X} & The new orientation value.\\
+\hline
+{\em sp} & Set \hyperlink{classBall}{Ball}'s speed according to arguement double sp. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classBall_a5b2818b0d9db0c5bc8cd54f7753ff752}{\index{Ball@{Ball}!set\+Radius@{set\+Radius}}
+\index{set\+Radius@{set\+Radius}!Ball@{Ball}}
+\subsubsection[{set\+Radius}]{\setlength{\rightskip}{0pt plus 5cm}void Ball\+::set\+Radius (
+\begin{DoxyParamCaption}
+\item[{float}]{r}
+\end{DoxyParamCaption}
+)}}\label{classBall_a5b2818b0d9db0c5bc8cd54f7753ff752}
+
+
+Mutator to change the radius of the ball according to the input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The new radius value. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classBall_afe129f1eeb03c5807fb1fb7b9d2b4692}{\index{Ball@{Ball}!set\+Speed@{set\+Speed}}
+\index{set\+Speed@{set\+Speed}!Ball@{Ball}}
+\subsubsection[{set\+Speed}]{\setlength{\rightskip}{0pt plus 5cm}void Ball\+::set\+Speed (
+\begin{DoxyParamCaption}
+\item[{float}]{sp}
+\end{DoxyParamCaption}
+)}}\label{classBall_afe129f1eeb03c5807fb1fb7b9d2b4692}
+
+
+set \hyperlink{classBall}{Ball}'s speed through arguement. 
+
+Mutator to change the orientation of the ball according to the input.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sp} & Set \hyperlink{classBall}{Ball}'s speed according to arguement double sp.\\
+\hline
+{\em new\+X} & The new orientation value. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classBall_a6b8992f08c3bc983fd4093f1d9963dfe}{\index{Ball@{Ball}!set\+X\+Position@{set\+X\+Position}}
+\index{set\+X\+Position@{set\+X\+Position}!Ball@{Ball}}
+\subsubsection[{set\+X\+Position}]{\setlength{\rightskip}{0pt plus 5cm}void Ball\+::set\+X\+Position (
+\begin{DoxyParamCaption}
+\item[{float}]{new\+X}
+\end{DoxyParamCaption}
+)}}\label{classBall_a6b8992f08c3bc983fd4093f1d9963dfe}
+
+
+Mutator to change the x position of the ball according to the input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+X} & The new X position value. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classBall_a9716de6d4d54875e65b455af2758d16e}{\index{Ball@{Ball}!set\+Y\+Position@{set\+Y\+Position}}
+\index{set\+Y\+Position@{set\+Y\+Position}!Ball@{Ball}}
+\subsubsection[{set\+Y\+Position}]{\setlength{\rightskip}{0pt plus 5cm}void Ball\+::set\+Y\+Position (
+\begin{DoxyParamCaption}
+\item[{float}]{new\+Y}
+\end{DoxyParamCaption}
+)}}\label{classBall_a9716de6d4d54875e65b455af2758d16e}
+
+
+Mutator to change the y position of the ball according to the input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Y} & The new y position value. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Ball_8h}{Ball.\+h}\item 
+\hyperlink{Ball_8cpp}{Ball.\+cpp}\end{DoxyCompactItemize}

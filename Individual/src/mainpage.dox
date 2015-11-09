@@ -1,0 +1,30 @@
+/*! \mainpage PongGame Instruction
+ 
+ \section intro_sec Introduction
+ 
+ Welcome to the introduction of Pong Game!
+ 
+ This is a Pong Game designed by Zixiao Wang.
+ 
+ This introduction will introduce the basic control of the game.
+ 
+ \section intro_sec How to play the pong game
+ 
+ There will be a control panel besides the game window help you to control the game.
+ It is easy to learn how to play the game.
+ Choose one of Modes showed on the panel, game will start automaticlly.
+ REMEMBER to click the window after you choose the game mode, otherwise you will could not control the paddle!!
+ 
+ Left Mouse Click: start/pause
+ 
+ Player 1 (Top paddle):\n
+ a  ->  move left \n
+ d  ->  move right
+					   
+ Player 2 (Bottom paddle) : \n
+ left key  -> move left\n
+ right key -> move right
+ 
+ 
+ 
+ */

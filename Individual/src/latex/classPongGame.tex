@@ -1,0 +1,198 @@
+\hypertarget{classPongGame}{\section{Pong\+Game Class Reference}
+\label{classPongGame}\index{Pong\+Game@{Pong\+Game}}
+}
+
+
+The \hyperlink{classPongGame}{Pong\+Game} class. This class represents game environment.  
+
+
+
+
+{\ttfamily \#include $<$Pong\+Game.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPongGame_ab43c680542f00834d51ad75da21e5b4f}{Pong\+Game} (int width, int height, std\+::vector$<$ \hyperlink{classBall}{Ball} $>$ $\ast$b, std\+::vector$<$ \hyperlink{classPlayer}{Player} $>$ $\ast$p)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classPongGame_afb95a66cbc5618ca9c73476f8c51ab94}{\hyperlink{classPongGame_afb95a66cbc5618ca9c73476f8c51ab94}{$\sim$\+Pong\+Game} ()}\label{classPongGame_afb95a66cbc5618ca9c73476f8c51ab94}
+
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+int \hyperlink{classPongGame_ad5ced36934c6597e1ba0603108953826}{update\+Move} ()
+\begin{DoxyCompactList}\small\item\em Update the status of game by the specificied amount time. \end{DoxyCompactList}\item 
+void \hyperlink{classPongGame_a10d3179a962692fef5bda0dc9927d368}{register\+Ball} (\hyperlink{classBall}{Ball} b)
+\begin{DoxyCompactList}\small\item\em Balls register with the environment, which adds them to the environment data structure(s). \end{DoxyCompactList}\item 
+void \hyperlink{classPongGame_a8372b9946c95954b35fcf4c3543c11c2}{register\+Player} (\hyperlink{classPlayer}{Player} p)
+\begin{DoxyCompactList}\small\item\em Players register with the environment, which adds them to the environment data structure(s). \end{DoxyCompactList}\item 
+\hypertarget{classPongGame_a911a5071f520fd9989b9b4de2039c982}{void \hyperlink{classPongGame_a911a5071f520fd9989b9b4de2039c982}{Start\+New\+Game} ()}\label{classPongGame_a911a5071f520fd9989b9b4de2039c982}
+
+\begin{DoxyCompactList}\small\item\em Start a new Game. \end{DoxyCompactList}\item 
+\hypertarget{classPongGame_aa920817372d5aa5f8309ceb6b10d3a5e}{time\+\_\+t \hyperlink{classPongGame_aa920817372d5aa5f8309ceb6b10d3a5e}{get\+Start\+Time} ()}\label{classPongGame_aa920817372d5aa5f8309ceb6b10d3a5e}
+
+\begin{DoxyCompactList}\small\item\em Getter to get the start time of the game. \end{DoxyCompactList}\item 
+\hypertarget{classPongGame_aa96aa2608d7c211319175857faf3dbf6}{double \hyperlink{classPongGame_aa96aa2608d7c211319175857faf3dbf6}{get\+Difftime} ()}\label{classPongGame_aa96aa2608d7c211319175857faf3dbf6}
+
+\begin{DoxyCompactList}\small\item\em Getter to get the how long does game last. \end{DoxyCompactList}\item 
+int \hyperlink{classPongGame_acf5bed550d45e295b7ba231f5c77f8b7}{get\+Scorei} (int i)
+\begin{DoxyCompactList}\small\item\em Getter to get the specific score according to the input index. \end{DoxyCompactList}\item 
+\hypertarget{classPongGame_afa96567179aa1748c3fb63ed83524ccb}{int \hyperlink{classPongGame_afa96567179aa1748c3fb63ed83524ccb}{get\+Mode} ()}\label{classPongGame_afa96567179aa1748c3fb63ed83524ccb}
+
+\begin{DoxyCompactList}\small\item\em Getter to get the mode of game. \end{DoxyCompactList}\item 
+void \hyperlink{classPongGame_a15649211e81c19c363c1b37be73d4d90}{set\+Start\+Time} (time\+\_\+t new\+Time)
+\begin{DoxyCompactList}\small\item\em Mutator to change the start time of the game. \end{DoxyCompactList}\item 
+void \hyperlink{classPongGame_a0e74f3db80283de1fae5a018f6e62f35}{set\+Mode} (int i)
+\begin{DoxyCompactList}\small\item\em Mutator to change the mode of the game. \end{DoxyCompactList}\item 
+void \hyperlink{classPongGame_ac4f09e4632cfda46521fdce2fe0f7167}{set\+Difftime} (double newdiff\+Time)
+\begin{DoxyCompactList}\small\item\em Mutator to change lasting time of the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classPongGame}{Pong\+Game} class. This class represents game environment. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPongGame_ab43c680542f00834d51ad75da21e5b4f}{\index{Pong\+Game@{Pong\+Game}!Pong\+Game@{Pong\+Game}}
+\index{Pong\+Game@{Pong\+Game}!Pong\+Game@{Pong\+Game}}
+\subsubsection[{Pong\+Game}]{\setlength{\rightskip}{0pt plus 5cm}Pong\+Game\+::\+Pong\+Game (
+\begin{DoxyParamCaption}
+\item[{int}]{w, }
+\item[{int}]{h, }
+\item[{std\+::vector$<$ {\bf Ball} $>$ $\ast$}]{b, }
+\item[{std\+::vector$<$ {\bf Player} $>$ $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{classPongGame_ab43c680542f00834d51ad75da21e5b4f}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The width of window. \\
+\hline
+{\em height} & The height of window. \\
+\hline
+{\em b} & The balls in the game. \\
+\hline
+{\em p} & The players in the game. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classPongGame_acf5bed550d45e295b7ba231f5c77f8b7}{\index{Pong\+Game@{Pong\+Game}!get\+Scorei@{get\+Scorei}}
+\index{get\+Scorei@{get\+Scorei}!Pong\+Game@{Pong\+Game}}
+\subsubsection[{get\+Scorei}]{\setlength{\rightskip}{0pt plus 5cm}int Pong\+Game\+::get\+Scorei (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{classPongGame_acf5bed550d45e295b7ba231f5c77f8b7}
+
+
+Getter to get the specific score according to the input index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The index of the specific score. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPongGame_a10d3179a962692fef5bda0dc9927d368}{\index{Pong\+Game@{Pong\+Game}!register\+Ball@{register\+Ball}}
+\index{register\+Ball@{register\+Ball}!Pong\+Game@{Pong\+Game}}
+\subsubsection[{register\+Ball}]{\setlength{\rightskip}{0pt plus 5cm}void Pong\+Game\+::register\+Ball (
+\begin{DoxyParamCaption}
+\item[{{\bf Ball}}]{b}
+\end{DoxyParamCaption}
+)}}\label{classPongGame_a10d3179a962692fef5bda0dc9927d368}
+
+
+Balls register with the environment, which adds them to the environment data structure(s). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & the ball need to be registered to the environment. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPongGame_a8372b9946c95954b35fcf4c3543c11c2}{\index{Pong\+Game@{Pong\+Game}!register\+Player@{register\+Player}}
+\index{register\+Player@{register\+Player}!Pong\+Game@{Pong\+Game}}
+\subsubsection[{register\+Player}]{\setlength{\rightskip}{0pt plus 5cm}void Pong\+Game\+::register\+Player (
+\begin{DoxyParamCaption}
+\item[{{\bf Player}}]{p}
+\end{DoxyParamCaption}
+)}}\label{classPongGame_a8372b9946c95954b35fcf4c3543c11c2}
+
+
+Players register with the environment, which adds them to the environment data structure(s). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the player need to be registered to the environment. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPongGame_ac4f09e4632cfda46521fdce2fe0f7167}{\index{Pong\+Game@{Pong\+Game}!set\+Difftime@{set\+Difftime}}
+\index{set\+Difftime@{set\+Difftime}!Pong\+Game@{Pong\+Game}}
+\subsubsection[{set\+Difftime}]{\setlength{\rightskip}{0pt plus 5cm}void Pong\+Game\+::set\+Difftime (
+\begin{DoxyParamCaption}
+\item[{double}]{newdiff\+Time}
+\end{DoxyParamCaption}
+)}}\label{classPongGame_ac4f09e4632cfda46521fdce2fe0f7167}
+
+
+Mutator to change lasting time of the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em newdiff\+Time} & The lasting time of the game. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPongGame_a0e74f3db80283de1fae5a018f6e62f35}{\index{Pong\+Game@{Pong\+Game}!set\+Mode@{set\+Mode}}
+\index{set\+Mode@{set\+Mode}!Pong\+Game@{Pong\+Game}}
+\subsubsection[{set\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}void Pong\+Game\+::set\+Mode (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{classPongGame_a0e74f3db80283de1fae5a018f6e62f35}
+
+
+Mutator to change the mode of the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The mode of the game. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPongGame_a15649211e81c19c363c1b37be73d4d90}{\index{Pong\+Game@{Pong\+Game}!set\+Start\+Time@{set\+Start\+Time}}
+\index{set\+Start\+Time@{set\+Start\+Time}!Pong\+Game@{Pong\+Game}}
+\subsubsection[{set\+Start\+Time}]{\setlength{\rightskip}{0pt plus 5cm}void Pong\+Game\+::set\+Start\+Time (
+\begin{DoxyParamCaption}
+\item[{time\+\_\+t}]{new\+Time}
+\end{DoxyParamCaption}
+)}}\label{classPongGame_a15649211e81c19c363c1b37be73d4d90}
+
+
+Mutator to change the start time of the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Time} & The start time of the game. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPongGame_ad5ced36934c6597e1ba0603108953826}{\index{Pong\+Game@{Pong\+Game}!update\+Move@{update\+Move}}
+\index{update\+Move@{update\+Move}!Pong\+Game@{Pong\+Game}}
+\subsubsection[{update\+Move}]{\setlength{\rightskip}{0pt plus 5cm}int Pong\+Game\+::update\+Move (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPongGame_ad5ced36934c6597e1ba0603108953826}
+
+
+Update the status of game by the specificied amount time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em elasped\+Time} & The delta time. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{PongGame_8h}{Pong\+Game.\+h}\item 
+\hyperlink{PongGame_8cpp}{Pong\+Game.\+cpp}\end{DoxyCompactItemize}
